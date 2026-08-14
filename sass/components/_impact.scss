@@ -1,0 +1,25 @@
+@use "../abstract/index" as *;
+
+.impact {
+  padding: 12rem 0rem;
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.4rem;
+    @include boxSimilar;
+  }
+
+  &__number {
+    font-family: var(--font-primary);
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--color-secondary);
+  }
+
+  &__text {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,131 @@
+@use "../abstract/" as *;
+
+.industries {
+  position: absolute;
+  top: 4.9rem;
+  right: -20rem;
+  background-color: var(--color-grey-light-1);
+  width: 50rem;
+  padding: 3rem;
+  box-shadow: 0 0rem 5rem rgba(0, 0, 0, 0.5);
+  border-radius: var(--border-radius-md);
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: all 0.3s;
+
+  @include bp-medium {
+    position: relative;
+    top: 0;
+    left: 0;
+    box-shadow: none;
+    transition: all 0.3s;
+
+    height: 0;
+    padding: 0;
+    opacity: 1;
+    overflow: hidden;
+  }
+
+  @include bp-large {
+    width: 40rem;
+    right: -16rem;
+    top: 5rem;
+  }
+
+  &::before {
+    content: "";
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--color-grey-light-1);
+
+    position: absolute;
+    top: -1.9rem;
+    left: 50%;
+    transform: translateX(-50%);
+    clip-path: polygon(51% 0, 0 100%, 100% 100%);
+
+    @include bp-medium {
+      display: none;
+    }
+  }
+
+  &__menu {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    align-self: stretch;
+
+    @include bp-medium {
+      align-self: center;
+      flex-direction: column;
+    }
+
+    &--wrapper {
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+
+      span {
+        font-weight: 500;
+      }
+    }
+  }
+
+  &__list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.4rem;
+
+    @include bp-medium {
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
+  }
+
+  &__link:link,
+  &__link:visited {
+    font-family: var(--font-primary);
+    text-decoration: none;
+    color: var(--color-secondary-light);
+    font-weight: 500;
+    border-bottom: 1px solid currentColor;
+    transition: all 0.2s;
+  }
+
+  &__link:hover,
+  &__link:active {
+    color: var(--color-secondary-dark);
+  }
+
+  &__menu-icon {
+    width: 2rem;
+    height: 2rem;
+    transform: translateY(1px);
+  }
+
+  &__menu-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+.show-industries-menu {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  animation: boxMoveUp 0.3s ease-in;
+
+  @include bp-medium {
+    height: auto;
+    top: 0;
+    left: 0;
+    animation: none;
+    margin-top: 3.2rem;
+  }
+}

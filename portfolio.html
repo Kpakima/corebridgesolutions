@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="We help businesses and organizations build stronger technology foundations through connectivity, infrastructure, software, cybersecurity, and digital solutions."
+    />
+    <title>
+      CoreBridege Solutions&mdash;We solve all your business problem.
+    </title>
+
+    <!-- My External Script -->
+    <script src="js/script.js" defer></script>
+
+    <!-- Favicons -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="img/favicons/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="img/favicons/favicon.svg" />
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicons/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="img/favicons/site.webmanifest" />
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Animation stylesheet  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- External style sheet -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo-box">
+        <a href="index.html">
+          <img
+            src="img/logo.png"
+            alt="CoreBridege Logo"
+            class="header__logo"
+            fetchpriority="high"
+          />
+        </a>
+      </div>
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-list-item">
+            <a href="index.html" class="header__nav-list-link">Home</a>
+          </li>
+          <li class="header__nav-list-item">
+            <a href="about.html" class="header__nav-list-link">About</a>
+          </li>
+          <li class="header__nav-list-item">
+            <a href="service.html" class="header__nav-list-link">Services</a>
+          </li>
+          <li class="header__nav-list-item">
+            <a
+              href="portfolio.html"
+              class="header__nav-list-link header__nav-list-link--active"
+              >Portfolio</a
+            >
+          </li>
+          <li class="header__nav-list-item industries__menu">
+            <div class="industries__menu--wrapper">
+              <span> Industries</span>
+              <svg class="industries__menu-icon">
+                <use xlink:href="img/sprite.svg#icon-chevron-down"></use>
+              </svg>
+            </div>
+            <div class="industries">
+              <ul class="industries__list">
+                <li class="industries__item">
+                  <a href="#" class="industries__link">Education</a>
+                </li>
+                <li class="industries__item">
+                  <a href="#" class="industries__link">Healthcare</a>
+                </li>
+                <li class="industries__item">
+                  <a href="#" class="industries__link">Banking & Finance</a>
+                </li>
+                <li class="industries__item">
+                  <a href="#" class="industries__link">Hospital</a>
+                </li>
+                <li class="industries__item">
+                  <a href="#" class="industries__link">Government</a>
+                </li>
+                <li class="industries__item">
+                  <a href="#" class="industries__link">NGOs</a>
+                </li>
+                <li class="industries__item">
+                  <a href="#" class="industries__link">Business</a>
+                </li>
+                <li class="industries__item">
+                  <a href="#" class="industries__link">Remote Operations</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="header__nav-list-item">
+            <a href="insight.html" class="header__nav-list-link">Insights</a>
+          </li>
+          <li class="header__nav-list-item">
+            <a
+              href="contact.html"
+              class="header__nav-list-link btn btn--primary"
+              >Get a quote<span>&rarr;</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+      <button class="mobile-nav-btn">
+        <svg class="mobile-nav-btn__icon mobile-nav-btn__icon--burger">
+          <use xlink:href="img/menu.svg#icon-menu"></use>
+        </svg>
+        <svg class="mobile-nav-btn__icon mobile-nav-btn__icon--cross">
+          <use xlink:href="img/menu.svg#icon-cross"></use>
+        </svg>
+      </button>
+    </header>
+
+    <main>
+      <div class="banner">
+        <div class="banner__text-box">
+          <ul class="banner__breadcrumbs">
+            <li class="banner__breadcrumbs-item">
+              <a href="index.html" class="banner__breadcrumbs-link"
+                >CoreBridge Solutions</a
+              >
+            </li>
+            <li class="banner__breadcrumbs-item banner__breadcrumbs-seperator">
+              /
+            </li>
+            <li class="banner__breadcrumbs-item">
+              <a
+                href="portfolio.html"
+                class="banner__breadcrumbs-link banner__breadcrumbs-link--active"
+                >Our portfolio</a
+              >
+            </li>
+          </ul>
+          <h1 class="heading-1 u-color-text-light">
+            Solutions built for real-world challenges.
+          </h1>
+          <p class="paragraph u-color-text-light">
+            A showcase of the types of projects CoreBridge Solutions can design,
+            implement, and support.
+          </p>
+        </div>
+      </div>
+
+      <!-- The portfolios section components -->
+      <section class="portfolios">
+        <div class="u-center-box u-center-text" data-aos="fade-up">
+          <span class="heading-sub u-margin-bottom-sm">Our work</span>
+          <h2 class="heading-2 u-margin-bottom-bg">
+            Ideas Are Powerful. Results Are Better.
+          </h2>
+        </div>
+        <div class="container grid grid-3-cols" data-aos="fade-up">
+          <div class="portfolios__porfolio">
+            <img
+              src="img/network-deploment.jpg"
+              alt="Network deployment project photo"
+              class="portfolios__img"
+            />
+            <div class="portfolios__text-box">
+              <span class="portfolios__tag">Networking </span>
+              <h4 class="heading-4">Business Network Deployment</h4>
+              <p class="paragraph">
+                Designed a secure, scalable office network with managed Wi-Fi
+                and segmented access.
+              </p>
+            </div>
+          </div>
+          <div class="portfolios__porfolio">
+            <img
+              src="img/cctv-deployment.jpg"
+              alt="CCTY deployment project photo"
+              class="portfolios__img"
+            />
+            <div class="portfolios__text-box">
+              <span class="portfolios__tag">Security</span>
+              <h4 class="heading-4">CCTV Deployment</h4>
+              <p class="paragraph">
+                Designed surveillance coverage with centralized recording and
+                controlled remote access.
+              </p>
+            </div>
+          </div>
+          <div class="portfolios__porfolio">
+            <img
+              src="img/inventory-management.jpg"
+              alt="inventory management system project photo"
+              class="portfolios__img"
+            />
+            <div class="portfolios__text-box">
+              <span class="portfolios__tag">Software</span>
+              <h4 class="heading-4">Inventory Management System</h4>
+              <p class="paragraph">
+                Designed a digital workflow for stock, sales, reporting, and
+                management visibility.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- the CAll-To-Action section components -->
+      <section class="cta">
+        <div class="container" data-aos="fade-up">
+          <div class="cta__container">
+            <div class="cta__text-box">
+              <h2 class="heading-2 u-margin-bottom-sm u-color-text-light">
+                Your Next Step Starts Here.
+              </h2>
+              <p class="paragraph u-margin-bottom-bg u-color-text-light">
+                Tell us what you are trying to build, fix, secure, or improve.
+                We will<br />
+                help you identify the right next step
+              </p>
+              <div class="cta__btn-box">
+                <a
+                  href="contact.html"
+                  class="header__nav-list-link btn btn--primary"
+                  >Talk to us<span>&rarr;</span></a
+                >
+                <a
+                  href="contact.html"
+                  class="header__nav-list-link btn btn--secondary"
+                  >Request a Consultation<span>&rarr;</span></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- The footer section components -->
+    <footer class="footer" data-aos="fade-up">
+      <div class="footer__container container">
+        <div class="footer__col footer__col--1">
+          <div class="footer__logo-box u-margin-bottom-sm">
+            <a href="index.html">
+              <img
+                class="footer__logo"
+                src="img/logo-white.png"
+                alt="codebridge solutions logo"
+              />
+            </a>
+          </div>
+          <p class="paragraph u-margin-bottom-md u-color-text-light">
+            Technology, connectivity, and digital solutions for organizations
+            ready to grow.
+          </p>
+          <div class="footer__social-box">
+            <svg class="footer__social-icon">
+              <use xlink:href="img/sprite.svg#icon-facebook"></use>
+            </svg>
+            <svg class="footer__social-icon">
+              <use xlink:href="img/sprite.svg#icon-twitter"></use>
+            </svg>
+            <svg class="footer__social-icon">
+              <use xlink:href="img/sprite.svg#icon-linkedin"></use>
+            </svg>
+            <svg class="footer__social-icon">
+              <use xlink:href="img/sprite.svg#icon-youtube"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="footer__col footer__col--2">
+          <h4 class="heading-4 u-margin-bottom-md u-color-text-light">
+            Company
+          </h4>
+          <ul class="footer__nav">
+            <li class="footer__nav-item">
+              <a href="about.html" class="footer__nav-link">About</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="portfolio.html" class="footer__nav-link">Portfolio</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="insight.html" class="footer__nav-link">Insight</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="career.html" class="footer__nav-link">Careers</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col footer__col--3">
+          <h4 class="heading-4 u-margin-bottom-md u-color-text-light">
+            Services
+          </h4>
+          <ul class="footer__nav">
+            <li class="footer__nav-item">
+              <a href="service.html" class="footer__nav-link">Networking</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="service.html" class="footer__nav-link">Web & Software</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="service.html" class="footer__nav-link">Cybersecurity</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="service.html" class="footer__nav-link">Connectivity</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col footer__col--4">
+          <h4 class="heading-4 u-margin-bottom-md u-color-text-light">
+            Contact
+          </h4>
+          <ul class="footer__nav">
+            <li class="footer__nav-item">
+              <a href="contact.html" class="footer__nav-link"
+                >Request a Quote</a
+              >
+            </li>
+            <li class="footer__nav-item">
+              <a href="contact.html" class="footer__nav-link"
+                >Contact Our Team</a
+              >
+            </li>
+            <li class="footer__nav-item">
+              <a
+                href="mailto:corebridgesolutions@gmail.com"
+                class="footer__nav-link"
+                >corebrige@gmail.com</a
+              >
+            </li>
+            <li class="footer__nav-item">Monrovia, Liberia</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

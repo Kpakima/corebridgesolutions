@@ -1,0 +1,52 @@
+@mixin boxSimilar {
+  border: var(--border);
+  padding: 3rem;
+  border-radius: var(--border-radius-bg);
+  box-shadow: var(--box-shadow);
+  transition: all 0.3s;
+}
+
+@mixin primmaryHeadingStyle() {
+  font-family: var(--font-primary);
+  font-size: 6.2rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -2px;
+}
+
+//Media Query Manager
+
+// 1200px
+@mixin bp-large() {
+  @media only screen and (max-width: 75em) {
+    @content;
+  }
+}
+
+//1077px
+@mixin bp-medium() {
+  @media only screen and (max-width: 67.3125em) {
+    @content;
+  }
+}
+
+//885px
+@mixin bp-small() {
+  @media only screen and (max-width: 55.3125em) {
+    @content;
+  }
+}
+
+// 643px
+@mixin bp-smallest() {
+  @media only screen and (max-width: 40.1875em) {
+    @content;
+  }
+}
+
+//112.5px
+@mixin bp-largest() {
+  @media only screen and (min-width: 112.5em) {
+    @content;
+  }
+}

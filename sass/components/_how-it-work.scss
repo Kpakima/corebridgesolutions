@@ -1,0 +1,28 @@
+@use "../abstract/index" as *;
+
+.how {
+  padding: 12rem 0;
+
+  &__box {
+    @include boxSimilar;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+
+  &__number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2.4rem;
+    line-height: 1;
+    font-size: 1.8rem;
+    font-weight: 800;
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--color-text-highlight);
+    color: var(--color-secondary);
+    border-radius: 50%;
+  }
+}

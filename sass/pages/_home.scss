@@ -1,0 +1,116 @@
+@use "../abstract/index" as *;
+
+.hero {
+  padding: 10rem 4rem;
+  max-width: 160rem;
+  margin: 0 auto 12rem auto;
+  box-shadow: none;
+  background-image:
+    linear-gradient(
+      110deg,
+      var(--color-white) 0%,
+      var(--color-white) 60%,
+      transparent 50%
+    ),
+    url("../img/hero-bg.jpg");
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+
+  @include bp-medium {
+    padding: 8rem 4rem;
+  }
+
+  @include bp-medium {
+    background-image:
+      linear-gradient(
+        110deg,
+        var(--color-white) 0%,
+        var(--color-white) 70%,
+        transparent 50%
+      ),
+      url("../img/hero-bg.jpg");
+  }
+
+  @include bp-small {
+    background-image:
+      linear-gradient(
+        110deg,
+        var(--color-white) 0%,
+        var(--color-white) 80%,
+        transparent 50%
+      ),
+      url("../img/hero-bg.jpg");
+  }
+
+  @include bp-smallest {
+    background-image:
+      linear-gradient(
+        110deg,
+        var(--color-white) 0%,
+        var(--color-white) 100%,
+        transparent 50%
+      ),
+      url("../img/hero-bg.jpg");
+  }
+
+  &__text-box {
+    font-size: 2rem;
+    width: 60%;
+    padding-right: 6rem;
+
+    @include bp-medium {
+      width: 80%;
+    }
+
+    @include bp-small {
+      width: 90%;
+    }
+
+    @include bp-smallest {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 0;
+    }
+  }
+
+  &__btn-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+  }
+}
+
+.why-us {
+  padding: 12rem 0rem;
+
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    margin-bottom: 3rem;
+  }
+
+  &__list-item {
+    display: flex;
+    gap: 1.6rem;
+  }
+
+  &__icon {
+    height: 3rem;
+    width: 3rem;
+    fill: var(--color-secondary);
+  }
+
+  &__img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--border-radius-bg);
+  }
+}

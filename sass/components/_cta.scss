@@ -1,0 +1,36 @@
+@use "../abstract/" as *;
+
+.cta {
+  margin: 12rem 0;
+
+  &__container {
+    padding: 12rem 0rem;
+    background-image:
+      linear-gradient(90deg, rgba(4, 57, 35, 0.9), rgba(1, 17, 11, 0.9)),
+      url("../img/pattern.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: var(--border-radius-bg);
+    box-shadow: var(--box-shadow);
+
+    @include bp-smallest {
+      padding: 10rem 4rem;
+    }
+  }
+
+  &__text-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__btn-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+  }
+}

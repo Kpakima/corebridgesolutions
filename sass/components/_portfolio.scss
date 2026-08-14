@@ -1,0 +1,40 @@
+@use "../abstract/index" as *;
+
+.portfolios {
+  padding: 12rem 0rem;
+
+  &__porfolio {
+    @include boxSimilar;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    transition: all 0.3s;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+
+  &__text-box {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  &__tag {
+    display: inline-block;
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: 1rem;
+    color: var(--color-secondary-light);
+    background-color: var(--color-text-highlight);
+    align-self: flex-start;
+    border-radius: 100px;
+  }
+
+  &__img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--border-radius-bg);
+  }
+}

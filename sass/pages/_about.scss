@@ -1,0 +1,14 @@
+@use "../abstract/" as *;
+
+.values {
+  padding: 12rem 0rem;
+
+  &__value {
+    @include boxSimilar;
+    transition: all 0.3s;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+}

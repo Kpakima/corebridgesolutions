@@ -1,0 +1,41 @@
+@use "../abstract/index" as *;
+
+.u-margin-bottom-sm {
+  margin-bottom: 1.6rem !important;
+}
+
+.u-margin-bottom-md {
+  margin-bottom: 3rem;
+}
+
+.u-margin-bottom-bg {
+  margin-bottom: 4.8rem;
+}
+
+.u-margin-top-big {
+  margin-top: 6rem;
+}
+
+.container {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 4rem;
+}
+
+.u-center-text {
+  text-align: center;
+}
+
+.u-center-box {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 0 4rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.u-color-text-light {
+  color: var(--color-grey-light-1);
+}

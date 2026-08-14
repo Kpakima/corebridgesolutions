@@ -1,0 +1,69 @@
+@use "../abstract/" as *;
+
+.banner {
+  height: 80dvh;
+  background-image:
+    linear-gradient(90deg, rgba(4, 57, 35, 0.9), rgba(1, 17, 11, 0.9)),
+    url("../img/pattern.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem;
+
+  &__text-box {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    text-align: center;
+
+    @include bp-medium {
+      width: 70%;
+    }
+
+    @include bp-smallest {
+      width: 100%;
+    }
+  }
+
+  &__breadcrumbs {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    color: var(--color-grey-light-1);
+    animation: moveInRight 1s ease-in;
+    backface-visibility: hidden;
+  }
+
+  &__breadcrumbs-link {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: var(--color-grey-light-1);
+      border-bottom: 1px solid currentColor;
+      padding-bottom: 0.2rem;
+      transition: all 0.3s;
+      cursor: pointer;
+    }
+
+    &:hover,
+    &:active {
+      opacity: 0.6;
+    }
+
+    &--active:link,
+    &--active:visited {
+      color: var(--color-accent);
+    }
+  }
+
+  &__breadcrumbs-seperator {
+    font-size: 2.5rem;
+    transform: translateY(3px);
+  }
+}

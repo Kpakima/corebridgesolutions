@@ -1,0 +1,86 @@
+@use "../abstract/index" as *;
+
+.heading-1 {
+  font-family: var(--font-primary);
+  font-size: 6.2rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -2px;
+  animation: moveInLeft 1s ease-in;
+  backface-visibility: hidden;
+
+  @supports (background-clip: text) {
+    background-image: linear-gradient(
+      to right,
+      var(--color-secondary),
+      var(--color-primary)
+    );
+    display: inline-block;
+    background-clip: text;
+    color: transparent;
+  }
+
+  @include bp-small {
+    font-size: 5rem;
+  }
+}
+
+.heading-2 {
+  font-size: 4.4rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -2px;
+  font-family: var(--font-primary);
+
+  @supports (background-clip: text) {
+    background-image: linear-gradient(
+      to right,
+      var(--color-secondary),
+      var(--color-primary)
+    );
+    display: inline-block;
+    background-clip: text;
+    color: transparent;
+  }
+
+  @include bp-small {
+    font-size: 3.6rem;
+  }
+}
+
+.heading-3 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 1.2;
+  font-family: var(--font-primary);
+}
+
+.heading-4 {
+  font-size: 1.7rem;
+  font-weight: 600;
+  font-family: var(--font-primary);
+}
+
+.heading-sub {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  line-height: 1.2;
+  font-weight: 600;
+  color: var(--color-secondary);
+  letter-spacing: 2px;
+  background-color: var(--color-text-highlight);
+  padding: 1rem;
+  border-radius: 100px;
+  animation: moveInRight 1s ease-in;
+  backface-visibility: hidden;
+
+  @include bp-smallest {
+    font-size: 1.3rem;
+  }
+}
+
+.paragraph {
+  color: var(--color-grey-light-6);
+  line-height: var(--default-line-height);
+}
